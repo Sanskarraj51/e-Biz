@@ -8,6 +8,8 @@ export const fetchData = createAsyncThunk(
   "appUsers/fetchData",
   async () => {
     // ** token from local storage
+    const storedToken = localStorage.getItem("token");
+
     const response = await axios.get(
       `${process.env.REACT_APP_API_ENDPOINT}/users/`,
       {
