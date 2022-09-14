@@ -216,7 +216,7 @@ const Register = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:4000/user/signup",
+                `${process.env.REACT_APP_API_ENDPOINT}/user/signup/`,
         apiData,
         {
           header: {
