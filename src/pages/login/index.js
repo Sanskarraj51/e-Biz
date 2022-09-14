@@ -143,7 +143,7 @@ const LoginPage = () => {
       };
 
       const response = await axios.post(
-                `${process.env.REACT_APP_API_ENDPOINT}/user/login/`,
+                `${process.env.REACT_APP_API_ENDPOINT}/user/login`,
         apiData,
         {
           header: {
